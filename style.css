@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* line-height: 1.4; */
+    scroll-behavior: smooth;
+
+    /* 1rem = 10px */
+    /* font-size: 1.6rem; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.search {
+    display: flex;
+    width: 50%;
+    max-width: 78rem;
+}
+
+.search input {
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.search input:focus-visible {
+    outline: 1px solid purple;
+}
+
+.primary-btn {
+    background: rgb(202, 108, 202);
+    color: white;
+    padding: 0.5rem 1rem;
+    /* border-radius: 0px 15px 15px 0px; */
+}
+
+.primary-btn:hover {
+    background: rgb(59, 5, 59)
+}
+
+.primary-btn:active {
+    background: rgba(231, 59, 231, 0.788)
+}
+
+/* Card Styling */
+.profile-box {
+    padding: 3rem 2rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    width: 60vw;
+    max-width: 78rem;
+}
+
+.profile-box:hover {
+    transform: rotate(-2deg);
+    transition: all 0.5s ease-in;
+}
+
+.avatar {
+    height: 10rem;
+    width: 10rem;
+}
+
+.avatar img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-section button {
+    align-self: center;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left h1 {
+    font-size: 1.6rem;
+}
+
+.about {
+    margin: 2rem;
+}
+
+.status {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+}
